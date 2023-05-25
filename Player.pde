@@ -205,13 +205,13 @@ class Player
 
 void keyPressed()
 {
-  if( key == '4' )
+  if( key == '4' || keyCode == LEFT )
     player.left=true;
-  if( key == '5' )
+  if( key == '5' || keyCode == DOWN )
     player.down=true;
-  if( key == '6' )
+  if( key == '6' || keyCode == RIGHT )
     player.right=true;
-  if( key == '8' )
+  if( key == '8' || keyCode == UP )
     player.up=true;
     
   if( key == ' ' )
@@ -222,13 +222,13 @@ void keyPressed()
 
 void keyReleased()
 {
-  if( key == '4' )
+  if( key == '4' || keyCode == LEFT )
     player.left=false;
-  if( key == '5' )
+  if( key == '5' || keyCode == DOWN )
     player.down=false;
-  if( key == '6' )
+  if( key == '6' || keyCode == RIGHT )
     player.right=false;
-  if( key == '8' )
+  if( key == '8' || keyCode == UP )
     player.up=false;
   if( key == ' ' )
     player.shooting = false;
